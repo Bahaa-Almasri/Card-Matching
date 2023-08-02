@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Memory Game</h1>
+    <div class="timer">Time left: <span id="timer">0</span> seconds</div>
+
+    <div class="score-container">
+        <div class="score">Current Score: <span id="score">0</span></div>
+        <div class="top-score">Top Score: <span id="topScore">0</span></div>
+        <div class="previous-score">Previous Score: <span id="previousScore">0</span></div>
+        <div class="guesses">Guesses: <span id="guessCount">0</span></div>
+    </div>
+    <!--I added a span so I can modify the timer and scores alone without the other words-->
+
+    <div class="difficulty">
+        <label for="level">Select difficulty level:</label>
+        <select id="level">
+            <option value="4">Easy (8 cards)</option>
+            <option value="6">Medium (12 cards)</option>
+            <option value="8">Hard (16 cards)</option>
+        </select>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <div class="game-container">
+        <div class="game-board">
+            <!-- Cards will be created here -->
+        </div>
+    </div>
+
+    <div class="preloader">
+        <img src="pre.gif" alt="Loading...">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
